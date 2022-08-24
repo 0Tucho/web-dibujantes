@@ -1,0 +1,166 @@
+@font-face {
+  font-family: Noto;
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;300;400;500;600;700;800&display=swap");
+}
+* {
+  box-sizing: border-box;
+  list-style: none;
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+}
+:root{
+  --text: #212121;
+  --primary: #FFEB3B;
+  --accent: #9e9e9e;
+  --light: #fff9c4;
+  --dark: #FBC02D;
+  --divider: #bdbdbd;
+}
+html {
+  scroll-behavior: smooth; /*for transition in the same page*/
+  overflow-x: hidden;
+  font-family: noto;
+  color: var(--text)
+}
+a:-webkit-any-link{
+  color: var(--light);
+}
+button{
+  border: none;
+  color: #fff9c4;
+  background-color: #212121;
+  padding: 1rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+button:focus{
+  outline: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  place-content: center center;
+  place-items: center center;
+  place-self: center center;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+}
+header .container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  place-content: center center;
+  height: 25vh;
+  width: 100%;
+}
+header .container h1 {
+  font-size: 5rem;
+}
+header .container .navbar{
+  margin-top: 1.5rem;
+}
+header .container .navbar ul{
+  display: flex;
+}
+header .container .navbar li:nth-child(2){
+  padding: 0 5rem;
+}
+header .container .navbar li{
+  font-size: 1.5rem;
+}
+header .container .navbar li:hover{
+  color: var(--accent);
+}
+.heros{
+  height: 50vh;
+  max-width: 80%;
+}
+.hero1{
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+.hero__img{
+  object-fit: cover;
+  place-content: center center;
+}
+.hero1 img {
+  width: 20rem;
+}
+.hero__text{
+  margin-top: 10px;
+  justify-self: center;
+  text-align: center
+}
+.hero1__button a{
+  text-decoration: none;
+  place-self: center center;
+  text-align: center;
+}
+.hero1__button{
+  width: 14rem;
+  height: 5rem;
+  margin-top: 4rem;
+  text-decoration: none;
+  place-self: center center;
+  text-align: center;
+  place-content: center center;
+  place-items: center center;
+}
+.hero2{
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+.hero2 img {
+  width: 20rem;
+}
+.hero3{
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+.hero3 img {
+  width: 20rem;
+}
+#form{
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#form .form__structure{
+  display: flex;
+  flex-direction: column;
+  place-content: center center;
+  width: 20rem;
+  height: 30rem;
+  box-shadow: none;
+  font-family: inherit;
+  align-items: center;
+}
+.entry{
+  height: 1.25rem;
+  box-shadow: none;
+  font-family: inherit;
+  accent-color: black;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+form .entry--1{
+  height: 8rem;
+}
+#checkbox{
+  accent-color: var(--accent);
+  margin-bottom: 2rem;
+}

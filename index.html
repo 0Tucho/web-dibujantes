@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/styles/style.css" type="text/css"/>
     <title>ContArt</title>
+    <link rel="icon" type="image/png" href="/styles/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/styles/img/favicon-32x32.png" sizes="32x32">
   </head>
 
   <body>
@@ -24,26 +26,51 @@
 
     <main>
       <div class="container">
-        <div class="hero1 heros">
-          <img src="/styles/img/photo1.jpg" alt="Persona mostrando sus dibujos" class="hero1__img">
-          <p class="hero1__text">Irure excepteur reprehenderit eiusmod est. Cillum mollit enim aute non sunt est nisi laborum cupidatat nisi Lorem voluptate non eu. Exercitation esse cillum laborum excepteur veniam duis officia ipsum cupidatat ipsum amet.</p>
-          <button class="hero1__button">Cuentanos tu historia</button>
-        </div>
-        <div class="hero2 heros">
-          <img src="/styles/img/photo2.jpg" alt="Persona mostrando sus dibujos" class="hero2__img">
-          <p class="hero2__text">Irure excepteur reprehenderit eiusmod est. Cillum mollit enim aute non sunt est nisi laborum cupidatat nisi Lorem voluptate non eu. Exercitation esse cillum laborum excepteur veniam duis officia ipsum cupidatat ipsum amet.</p>
-        </div>
-        <div class="hero3 heros">
-          <img src="/styles/img/photo3.jpg" alt="Cuaderno de dibujos" class="hero3__img">
-          <p class="hero3__text">Irure excepteur reprehenderit eiusmod est. Cillum mollit enim aute non sunt est nisi laborum cupidatat nisi Lorem voluptate non eu. Exercitation esse cillum laborum excepteur veniam duis officia ipsum cupidatat ipsum amet.</p>
-        </div>
+        <section class="hero1 heros">
+          <img src="/styles/img/photo1.jpg" alt="Persona mostrando sus dibujos" class="hero1__img hero__img">
+          <p class="hero1__text hero__text">Irure excepteur reprehenderit eiusmod est. Cillum mollit enim aute non sunt est nisi laborum cupidatat nisi Lorem voluptate non eu. Exercitation esse cillum laborum excepteur veniam duis officia ipsum cupidatat ipsum amet.</p>
+          <button class="hero1__button"> <a href="#form">Cuentanos tu historia</a></button>
+        </section>
+        <section class="hero2 heros">
+          <img src="/styles/img/photo2.jpg" alt="Persona mostrando sus dibujos" class="hero2__img hero__img">
+          <p class="hero2__text hero__text">Irure excepteur reprehenderit eiusmod est. Cillum mollit enim aute non sunt est nisi laborum cupidatat nisi Lorem voluptate non eu. Exercitation esse cillum laborum excepteur veniam duis officia ipsum cupidatat ipsum amet.</p>
+        </section>
+        <section class="hero3 heros">
+          <img src="/styles/img/photo3.jpg" alt="Cuaderno de dibujos" class="hero3__img hero__img">
+          <p class="hero3__text hero__text">Irure excepteur reprehenderit eiusmod est. Cillum mollit enim aute non sunt est nisi laborum cupidatat nisi Lorem voluptate non eu. Exercitation esse cillum laborum excepteur veniam duis officia ipsum cupidatat ipsum amet.</p>
+        </section>
+        <section id="form" class="container">
+          <form action="" class="form__structure">
+            <label for="name">Nombre</label>
+            <input type="text" class="entry">
+
+            <label for="checkbox">¿Eres artista?</label>
+            <input type="checkbox" name="" id="checkbox">
+
+            <label for="email">Email</label>
+            <input type="text" class="entry">
+
+            <label for="text">Texto</label>
+            <textarea name="" class="entry entry--1" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="Enviar">
+
+          </form>
+          <div class="social">
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+          </div>
+        </section>
       </div>
     </main>
 
-  </body>
-
-  <footer>
+    <footer class="container">
     <p class="footer__text contact">Contacto</p>
     <p class="footer__text join">Sumate como voluntario</p>
-  </footer>
+    </footer>
+
+  </body>
+
+  
 </html>
